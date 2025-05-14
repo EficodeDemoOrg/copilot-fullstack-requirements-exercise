@@ -1,71 +1,110 @@
-# Projekti: GeeniKutoja – Häikäisevä DNA-seikkailu!
+# Projekti: Geenikutoja – Häikäisevä DNA-seikkailu!
 
-**Tehtävä:** Karkottaa tylsät biologian tunnit ja vaihtaa kuivat kaaviot häikäiseviin digitaalisiin esityksiin, jotka näyttävät koululaisille, miten genetiikka *oikeasti* toimii (spoileri: se on aika mahtavaa).
+**Tehtävä:** Karkottaa tylsät biologian tunnit ja vaihtaa kuivat kaaviot häikäiseviin digitaalisiin esityksiin, jotka näyttävät koululaisille, miten genetiikka *oikeasti* toimii (spoileri: se on aika mahtavaa, yksinkertaisista ominaisuuksista monimutkaisiin sukupuihin!).
 
 ## 1. Johdanto: Pörröisyyden salaisen suunnitelman selvittäminen
 
-Opetusministeriö tietää, että genetiikka voi vaikuttaa oudolta taikuudelta, johon liittyy kummallisia kirjaimia (Bb? mitä?). Punnett-neliöiden tuijottaminen ei varsinaisesti ole "hauskaa tiedettä". Tarvitsemme työkalun, joka tekee perinnöllisyyden oppimisesta yhtä mukaansatempaavaa kuin kissanpennun valitsemisesta!
+Opetusministeriö tietää, että genetiikka voi vaikuttaa oudolta taikuudelta, jossa pyörii kummallisia kirjaimia (Bb? mitä?). Punnett-neliöiden tuijottaminen ei varsinaisesti huuda "hauskaa tiedettä". Tarvitsemme työkalun, joka tekee perinnöllisyyden oppimisesta yhtä mukaansatempaavaa kuin kissanpennun valitsemisesta!
 
-Tässä kohtaa kuvaan astuu "GeeniKutoja"-projekti. Ministeriö tarvitsee interaktiivisen sovelluksen, jossa lapset voivat leikkiä geneettistä parinmuodostusta (aluksi yksinkertaistetuilla ominaisuuksilla, kuten eläinten turkin värillä) ja nähdä heti todennäköiset tulokset. Kuvittele klikkaavasi 'Musta kissa' + 'Valkoinen kissa' ja *näkeväsi* heti, millä todennäköisyydellä saat suloisia mustia, valkoisia tai ehkä jopa kirjavia kissanpentuja!
+Tässä kohtaa "Geenikutoja"-projekti astuu kuvaan. Ministeriö tarvitsee interaktiivisen sovelluksen, jossa lapset voivat leikkiä geneettistä matchmakeria (aluksi yksinkertaistetuilla ominaisuuksilla, kuten eläinten turkin värillä) ja nähdä heti todennäköiset tulokset. Kuvittele klikkaavasi 'Musta kissa' + 'Valkoinen kissa' ja *näkeväsi* heti mahdollisuudet saada suloisia mustia, valkoisia tai ehkä jopa kirjavia kissanpentuja!
 
-Tiiminne tehtävä: Rakentaa GeeniKutojan Minimum Viable Product (MVP), joka tekee genetiikasta visuaalista ja eläväistä.
+Tiimisi tehtävä: Rakentaa Geenikutojan Minimum Viable Product (MVP), tehdä genetiikasta visuaalista ja eloisaa sekä luoda pohja vielä kiehtovampien geneettisten skenaarioiden tutkimiselle.
 
 ## 2. Liiketoimintavaatimukset
 
-GeeniKutoja-sovelluksen MVP:n tulee täyttää seuraavat ydinkriteerit:
+Geenikutoja-sovelluksen MVP:n tulee täyttää seuraavat ydinkriteerit:
 
 1. **Vanhempien ominaisuuksien syöttö:**
-    * Käyttäjällä (ajattele uteliasta lasta) tulee olla erittäin helppo tapa asettaa kahden vanhemman geneettiset ominaisuudet.
-    * MVP:ssä sallitaan yhden geenin **genotyypin** valinta (esim. 'BB', 'Bb', 'bb'). Jos valitsette fenotyypin syötön (kuten 'Musta turkki'), varmistakaa, että logiikkanne oikein yhdistää fenotyypit genotyyppeihin alla olevan mallin mukaisesti. Pitäkää se intuitiivisena!
+    * Käyttäjällä (ajattele uteliasta lasta) tulee olla erittäin yksinkertainen tapa asettaa kahden vanhemman geneettiset ominaisuudet.
+    * MVP:ssä sallitaan yhden geenin **genotyypin** valinta (esim. 'BB', 'Bb', 'bb'). Jos valitset fenotyypin syötön (kuten 'Musta turkki'), varmista, että logiikkasi vastaa oikein alla olevaa mallia. Pidä se intuitiivisena!
 
 2. **Geneettisen mallin toteutus:**
-    * Sovelluksen tulee tarkasti laskea perinnöllisyyden todennäköisyydet käyttäen yksinkertaista mendelististä genetiikkaa (katso Ydinmalli). Tämä on se "tieteellinen osuus".
+    * Sovelluksen tulee tarkasti laskea todennäköisyydet käyttäen perus-Mendelin genetiikkaa (katso Ydinmalli) selvittääkseen jälkeläisten todennäköiset geneettiset ominaisuudet. Tämä on se "tieteellinen osuus".
 
 3. **Jälkeläisten visualisointi (esityksen tähti!):**
-    * Tässä tapahtuu taika! Tulosten täytyy olla visuaalisesti mukaansatempaavia ja välittömästi ymmärrettäviä lapsille. Tavoitteena on **maksimaalinen selkeys, minimaalinen tylsyys**.
-    * Unohda tylsät taulukot. Ajattele **värikkäitä grafiikoita**, selkeitä merkintöjä, ehkä jopa **söpöjä kuvakkeita** (pörröisiä kissanpentuja? pilkullisia koiranpentuja? ruukkukasveja? Taiteellinen luovuutenne on tervetullutta!). Visualisoinnin TÄYTYY selkeästi näyttää:
+    * Tässä tapahtuu taika! Tulosten on oltava visuaalisesti mukaansatempaavia ja heti ymmärrettäviä lapsille. Tavoitteena on **maksimaalinen selkeys, minimaalinen tylsyys**.
+    * Unohda tylsät taulukot. Ajattele **värikkäitä grafiikoita**, selkeitä merkintöjä, ehkä jopa **söpöjä kuvakkeita** (pörröisiä kissanpentuja? pilkullisia koiranpentuja? ruukkukasveja? Taiteellinen luovuutesi on tervetullutta!). Visualisoinnin TÄYTYY selkeästi näyttää:
         * Ennustetut jälkeläisten **genotyyppien** suhteet/todennäköisyydet (esim. "25% BB", "50% Bb", "25% bb").
-        * Ennustetut jälkeläisten **fenotyyppien** suhteet/todennäköisyydet (esim. "Näyttää siltä, että 75% mahdollisuus mustiin kissanpentuihin!", "25% mahdollisuus valkoisiin kissanpentuihin!").
+        * Tuloksena olevat jälkeläisten **fenotyyppien** suhteet/todennäköisyydet (esim. "Näyttää siltä, että 75% mahdollisuus mustiin kissanpentuihin!", "25% mahdollisuus valkoisiin kissanpentuihin!").
     * **Tärkeää:** Tee siitä näyttävä! Tämä ei ole väitöskirjan puolustus; tarkoitus on herättää uteliaisuutta ja saada lapset sanomaan "Siistiä!", ei aiheuttaa hiljaista pohdiskelua (tai päiväunia).
 
 4. **Interaktiivinen kokeilu:**
     * Käyttäjien tulee voida helposti klikkailla, vaihtaa äidin ja isän ominaisuuksia ja nähdä tulosten muuttuvan välittömästi. Klikkaa, näe, opi!
 
-5. **MVP:n rajaus:**
-    * Keskity visualisoimaan **yksi geeni**, jossa on **yksinkertainen dominanssi**. Tee tämä hyvin ennen monimutkaisuuden lisäämistä.
+5. **MVP:n laajuus:**
+    * Keskity visualisoimaan **yksi geeni**, jossa on **yksinkertainen dominanssi**. Tämä perusmalli on avain ennen monimutkaisemman genetiikan tutkimista.
 
 6. **Teknologianeutraalius:**
-    * Käyttäkää mitä tahansa teknologiaa, joka sopii tiimillenne parhaiten (tai jolla saatte aikaan parhaan visualisoinnin!).
+    * Käytä mitä tahansa teknologiaa, joka sopii tiimillesi parhaiten (tai jolla rakennat parhaan visualisoinnin!).
     * Web-sovellus (vain frontend? frontend + backend?), työpöytäsovellus – kaikki ovat sallittuja vaihtoehtoja.
-    * Pitäkää MVP saavutettavana. Tietokantoja ei tarvita, ellei toteuteta lisätavoitteita.
+    * Pidä MVP saavutettavana. Tietokantoja ei tarvita, ellei toteuteta lisätavoitteita.
 
-## 3. Ydinmalli (MVP)
+## 3. Ydinmalli (MVP) – ja nopea kertaus!
 
-Toteuta yhden geenin periytyminen, kaksi alleelia, yksinkertainen mendelistinen dominanssi.
+Jotta "tieteellinen osuus" olisi kaikille selkeä, kerrataan nopeasti, miten tämän projektin yksinkertaistettu genetiikka toimii, ennen kuin tarkennetaan kissan turkin värin malliin. Tätä sovelluksesi visualisoi!
 
-**Esimerkkiskenaario (yksinkertaistettu kissan turkin väri):**
+* **Mikä on geeni? Mikä on alleeli?** Jokaiselle ominaisuudelle (kuten turkin väri) on sitä ohjaava **geeni**. **Alleelit** ovat geenin eri versioita. Tässä projektissa keskitymme yhteen geeniin, jolla on kaksi alleelia – esimerkiksi mustan ja valkoisen turkin alleelit. Jälkeläinen perii yhden alleelin kummaltakin vanhemmaltaan.
 
-* **Geeni:** Määrittää perus turkin värin.
-* **Alleelit:** `B` (dominoiva, musta turkki), `b` (resessiivinen, valkoinen turkki).
-* **Genotyypit -> Fenotyypit:** `BB` -> Musta turkki, `Bb` -> Musta turkki, `bb` -> Valkoinen turkki.
-* **Käyttäjän syöte:** Valitse genotyypit Vanhemmalle 1 (`BB`, `Bb`, `bb`) ja Vanhemmalle 2 (`BB`, `Bb`, `bb`).
-* **Laskentalogiikka:** Toteuta Punnett-neliön logiikka. (esim. `Bb` x `Bb` -> 25% `BB`, 50% `Bb`, 25% `bb`).
-* **Tulosten visualisointi:** Näytä fenotyyppien todennäköisyydet laskennan perusteella (esim. 75% Musta turkki, 25% Valkoinen turkki).
+* **Genotyyppi (kirjaimet, esim. BB, Bb, bb):** Yksilön tietty alleelipari kyseiselleGeenille. Esimerkiksi, jos mustan turkin alleeli on 'B' ja valkoisen turkin alleeli on 'b', yksilön genotyyppi voi olla yksi kolmesta vaihtoehdosta: `BB`, `Bb` tai `bb`.
+
+* **Fenotyyppi (ulkonäkö, esim. musta turkki):** Havaittava ominaisuus, joka johtuu genotyypistä.
+
+* **Dominanssi (miksi Bb on musta, ei harmaa):** Yksi alleeli on **dominoiva** toiseen (**resessiiviseen**) nähden.
+    * Dominoiva alleeli (esim. 'B' mustalle turkille) näkyy fenotyypissä, vaikka sitä olisi vain yksi kappale. Genotyypit `BB` ja `Bb` ovat molemmat mustia.
+    * Resessiivinen alleeli (esim. 'b' valkoiselle turkille) näkyy fenotyypissä vain, jos molemmat alleelit ovat resessiivisiä (`bb`). Dominoiva 'B'-alleeli peittää 'b'-alleelin vaikutuksen `Bb`-kissalla.
+
+* **Jälkeläisten ennustaminen (sovelluksen tehtävä!):** Geenikutoja laskee vanhempien genotyypeistä jälkeläisten genotyyppien ja fenotyyppien todennäköisyydet.
+
+Nyt, tässä on erityinen malli MVP:lle:
+
+**Esimerkkitapaus (Yksinkertaistettu kissan turkin väri):**
+
+* **Geeni:** Ohjaa perus turkin väriä.
+* **Alleelit:** `B` (dominoiva alleeli, tuloksena musta turkki), `b` (resessiivinen alleeli, tuloksena valkoinen turkki, jos `B` ei ole läsnä).
+* **Genotyypit -> Fenotyypit:**
+    * `BB` -> Musta turkki
+    * `Bb` -> Musta turkki
+    * `bb` -> Valkoinen turkki
+* **Käyttäjän syöte:** Käyttäjä valitsee Vanhempi 1:n genotyypin (`BB`, `Bb` tai `bb`) ja Vanhempi 2:n genotyypin (`BB`, `Bb` tai `bb`).
+* **Laskentalogikka:** Toteuta Punnett-neliön logiikka. Esimerkiksi, jos Vanhempi 1 on `Bb` ja Vanhempi 2 on `Bb`:
+    * Jälkeläisten genotyypin todennäköisyydet: 25% `BB`, 50% `Bb`, 25% `bb`.
+* **Tuloksen visualisointi:** Näytä fenotyypin todennäköisyydet laskennan perusteella. Esimerkiksi `Bb` x `Bb` -yhdistelmässä:
+    * Jälkeläisten fenotyypin todennäköisyydet: 75% musta turkki, 25% valkoinen turkki.
 
 ## 4. Odotettu lopputulos ja toimitettavat asiat
 
 Jokaisen tiimin tulee:
 
-1. Toimittaa toimiva GeeniKutoja MVP-sovellus, joka täyttää vaatimukset.
+1. Toimittaa toimiva Geenikutoja-MVP-sovellus, joka täyttää vaatimukset.
 2. Esittää lyhyt (5-10 min) demo:
-    * Esittele käyttöliittymä ja sen helppokäyttöisyys.
-    * Käy läpi muutamia erilaisia vanhempien yhdistelmiä.
-    * **Korosta visualisointia:** Näytä, kuinka selkeästi ja mukaansatempaavasti se esittää geneettiset tulokset kohderyhmälle.
+    * Näytä käyttöliittymä ja sen helppokäyttöisyys.
+    * Käy läpi muutama eri vanhempien yhdistelmä.
+    * **Korosta visualisointia:** Näytä, miten selkeästi ja mukaansatempaavasti se esittää geneettiset tulokset kohderyhmälle.
     * Mainitse lyhyesti valittu teknologia.
 
-## 5. Lisätavoitteet (valinnaiset – toteuta, jos aikaa riittää!)
+## 5. Lisätavoitteet (valinnainen – jos sisäinen Mendelisi kutsuu!)
 
-* **Vaativampi genetiikka:** Toteuta yhteisdominanssi/epätäydellinen dominanssi (vaaleanpunaiset kukat punaisesta + valkoisesta?). Käsittele kahta geeniä (dihybridiristeytys – hallitse 9:3:3:1-suhde!).
-* **Todella upea visualisointi:** Käytä oikeita kuvakkeita (kissat, koirat, kukat, herneet...). Ehkä yksinkertaisia animaatioita? Tee siitä ihastuttava!
-* **Tallenna luomuksesi:** Anna käyttäjien tallentaa luomiaan skenaarioita.
-* **Selitä kuin viisivuotiaalle:** Lisää yksinkertainen teksti, joka selittää, *miksi* tulokset näyttävät siltä kuin näyttävät.
+Jos olet hallinnut MVP:n ja sinulla on ylimääräistä aikaa, tässä on tapoja laajentaa Geenikutoja -sovelluksen ominaisuuksia ja tutkia monimutkaisempia geneettisiä periaatteita:
+
+* **Lisää värejä ja monimutkaisempia ominaisuuksia:**
+    * **Useita alleeleja:** Lisää kolmas alleeli olemassaolevalle turkin värigeenille (esim. alleeli 'ruskea' tai 'keltainen' turkki) ja määrittele sen dominanssihierarkia 'B':n ja 'b':n kanssa (esim. Musta > Ruskea > Valkoinen).
+    * **Eri dominanssikuvioita:** Toteuta ko-dominanssia tai epätäydellistä dominanssia olemassaolevilla kahdella alleelilla, jotta saadaan aikaan välimuotoisia tai yhdistettyjä fenotyyppejä (esim. jos 'B' ja 'W' alleelit kukkien värille olisivat ko-dominantteja, BW-genotyyppi saattaisi johtaa kukkiin, joissa on sekä mustia että valkoisia laikkuja, tai jos epätäydellisesti dominoivia, harmaita kukkia).
+* **Monigeeninen sekasorto (dihybridiset ristikkäin):**
+    * Mallinna kahta *itsenäistä* geeniä (esim. yksi turkin värille, toinen häntäpituisuudelle tai silmien värille). Visualisoi, miten niiden alleelit yhdistyvät jälkeläisissä. Voitko saavuttaa klassisen 9:3:3:1 fenotyypin suhteen kahden heterotsygoottisen vanhemman dihybridisessä ristissä?
+* **Sukupolvien nerous (sukupuu seuranta):**
+    * Salli käyttäjien valita jälkeläisiä yhdestä sukupolvesta (F1) tulemaan vanhemmiksi seuraavassa sukupolvessa (F2) ja niin edelleen.
+    * Toteuta tapa visualisoida tätä sukulinjaa, ehkä yksinkertaisena perhepuuna tai sukupuu-kaaviona, joka seuraa, miten ominaisuudet siirtyvät useiden sukupolvien ajan.
+* **Visuaalisesti upea tiede:**
+    * Mene yli perusväriblokkien tai yksinkertaisten kuvakkeiden. Luo yksityiskohtaisempia, kiinnostavampia tai jopa animoituja visuaaleja vanhempi- ja jälkeläisfenotyypeille. Tee siitä visuaalinen elämys, joka todella vangitsee huomion!
+* **Tallenna geneettiset kokeesi:**
+    * Toteuta toiminto, jolla voidaan tallentaa tiettyjä vanhempien yhdistelmiä ja niiden tuloksena olevia jälkeläisten todennäköisyyksiä, tai jopa koko monisukupolvisten kokeiden tallentaminen myöhempää tarkastelua varten.
+* **"Selitä-o-matic" -toiminto:**
+    * Lisää vaihtoehto näyttää yksinkertaisia, lapsiystävällisiä selityksiä tulosten rinnalla, jotka selventävät *miksi* tietyt tulokset ovat todennäköisempiä (esim. "Äidillä ja isällä on molemmilla piilotettu ohje valkoiselle turkille, joten on mahdollista, että niiden pennut voisivat olla valkoisia!").
+
+## 6. Kuinka aloittaa (työpajaohjeet)
+
+1.  Clone this repository.
+2.  Create your project files (code, UI designs, etc.) within your cloned repository.
+3.  Collaborate with your team using standard Git practices (push, pull, merge like pros!).
+4.  Build the Gene Weaver application, focusing on nailing that core logic and visual output for the MVP.
+5.  Commit your code regularly and prepare for your dazzling presentation!
