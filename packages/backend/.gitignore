@@ -8,9 +8,9 @@ lerna-debug.log*
 
 # Build outputs
 dist/
-dist-ssr/
 build/
 out/
+lib/
 
 # Environment variables
 .env
@@ -37,19 +37,18 @@ coverage/
 # nyc test coverage
 .nyc_output
 
-# Cypress
-cypress/videos/
-cypress/screenshots/
-cypress/downloads/
-cypress/results/
-cypress/reports/
-.cypress-cache/
-
 # Testing
 test-results/
-playwright-report/
-test-output/
+junit.xml
 mochawesome-report/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+data/
+uploads/
+storage/
 
 # Editor directories and files
 .vscode/*
@@ -83,23 +82,12 @@ temp/
 
 # Cache directories
 .cache/
-.parcel-cache/
-.vite/
 
 # Optional npm cache directory
 .npm
 
 # Optional eslint cache
 .eslintcache
-
-# Optional stylelint cache
-.stylelintcache
-
-# Microbundle cache
-.rpt2_cache/
-.rts2_cache_cjs/
-.rts2_cache_es/
-.rts2_cache_umd/
 
 # Optional REPL history
 .node_repl_history
@@ -116,58 +104,54 @@ temp/
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
 
-# Storybook build outputs
-storybook-static/
-
-# Chromatic
-build-storybook.log
-
-# Rollup cache
-.rollup.cache
-
 # TypeScript cache
 *.tsbuildinfo
 
-# Vercel
-.vercel
-
-# Netlify
-.netlify
-
-# Next.js
-.next/
-
-# Nuxt.js
-.nuxt
-
-# Gatsby files
-.cache/
-public
-
-# Vuepress build output
-.vuepress/dist
+# PM2 process manager
+.pm2/
 
 # Serverless directories
 .serverless/
 
-# FuseBox cache
-.fusebox/
+# Docker
+.dockerignore
 
-# DynamoDB Local files
-.dynamodb/
+# Kubernetes
+*.yaml.bak
 
-# TernJS port file
-.tern-port
-
-# Webpack
-.webpack/
-
-# Electron-builder output
-/dist_electron/
-
-# Local development certificates
+# SSL certificates
 *.pem
+*.key
+*.crt
+*.cert
+
+# Sessions
+sessions/
+
+# API keys and secrets
+secrets/
+keys/
+
+# Documentation build
+docs/build/
+
+# Swagger/OpenAPI generated files
+swagger-ui/
 
 # Debug files
 debug.log
 npm-debug.log
+
+# Local development files
+local/
+local.json
+
+# Backup files
+*.backup
+*.bak
+
+# Lock files (if using specific package manager)
+# Uncomment based on your preference
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
