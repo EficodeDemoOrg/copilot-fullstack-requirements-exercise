@@ -1,0 +1,282 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Main app styling with pastel background */
+.gene-weaver-app {
+  background-color: #f8f6ff;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #444;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+}
+
+/* Trait Legends */
+.trait-legends {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.trait-legend {
+  flex: 1;
+  max-width: 300px;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 0 10px;
+  background-color: white;
+}
+
+.trait-legend h3 {
+  margin-top: 0;
+  color: #444;
+}
+
+/* Parent selection container */
+.parents-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Parent column */
+.parent-column {
+  flex: 1;
+  max-width: 300px;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 0 10px;
+  background-color: #f8f9fa;
+}
+
+/* Trait selector */
+.trait-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.trait-selector label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #5a4e8a;
+}
+
+/* Select styling */
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f0ebff;
+  color: #5a4e8a;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+select:focus {
+  border-color: #a596d8;
+  outline: none;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Tables layout */
+.genotype-tables, .phenotype-tables {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  margin-bottom: 2rem;
+}
+
+.trait-table {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+/* Combined phenotypes */
+.combined-phenotypes {
+  margin-bottom: 2rem;
+}
+
+.combined-phenotype-row {
+  transition: background-color 0.5s;
+}
+
+/* Progress bar container */
+.progress-container {
+  height: 20px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+/* Progress bar - genotype */
+.progress-genotype {
+  height: 100%;
+  background-color: #4CAF50;
+  border-radius: 10px;
+  transition: width 0.8s ease-in-out;
+}
+
+/* Progress bar - phenotype */
+.progress-phenotype {
+  height: 100%;
+  background-color: #2196F3;
+  border-radius: 10px;
+  transition: width 0.8s ease-in-out;
+}
+
+/* Progress bar - combined phenotype */
+.progress-combined {
+  height: 100%;
+  background-color: #9C27B0;
+  border-radius: 10px;
+  transition: width 0.8s ease-in-out;
+}
+
+/* Genotype row highlighting */
+.genotype-row {
+  transition: background-color 0.5s;
+}
+
+/* Phenotype row highlighting */
+.phenotype-row {
+  transition: background-color 0.5s;
+}
+
+.instructions-container {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 3rem;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.instructions-container ul {
+  padding-left: 1.5rem;
+}
+
+.instructions-container li {
+  margin-bottom: 0.5rem;
+  color: #5a4e8a;
+}
+
+.probability-text {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+/* Center images if any */
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .genotype-tables, .phenotype-tables {
+    flex-direction: column;
+  }
+  
+  .trait-table {
+    width: 100%;
+  }
+  
+  .parents-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

@@ -108,3 +108,60 @@ If you've mastered the MVP and have extra time, here are ways to expand the Gene
 3.  Collaborate with your team using standard Git practices (push, pull, merge like pros!).
 4.  Build the Gene Weaver application, focusing on nailing that core logic and visual output for the MVP.
 5.  Commit your code regularly and prepare for your dazzling presentation!
+
+## Getting Started (Monorepo)
+
+### Installation
+
+Install dependencies separately for each package:
+
+Frontend:
+```bash
+cd packages/frontend
+npm install
+```
+
+Backend:
+```bash
+cd packages/backend
+npm install
+```
+
+### Running the Application
+
+Frontend:
+```bash
+cd packages/frontend
+npm run dev
+```
+
+Backend:
+```bash
+cd packages/backend
+npm run dev
+```
+*Note: If you have not set up a dev script in backend/package.json, add one like:*
+```json
+"dev": "ts-node src/index.ts"
+```
+
+### Running Tests
+
+Frontend Unit Tests:
+```bash
+cd packages/frontend
+npm test
+```
+
+Backend Unit Tests:
+```bash
+cd packages/backend
+npm test
+```
+*Note: The backend test script is a placeholder. Update it to run your actual tests (e.g., using Jest or another test runner).* 
+
+End-to-End Tests (Cypress):
+```bash
+cd packages/frontend
+npx cypress open
+```
